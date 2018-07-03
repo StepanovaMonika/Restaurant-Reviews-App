@@ -1,8 +1,8 @@
 // Registering service worker
-if('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
     console.log('Registration was successful.');
-  }).catch(function(err){
+  }).catch(function(err) {
     console.log('Registration failed.');
   })
 }
@@ -12,7 +12,7 @@ let restaurantCacheName = "restaurant-v1";
 // Caching files after installation
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('restaurantCacheName').then(function(cache){
+    caches.open('restaurantCacheName').then(function(cache) {
       return cache.addAll(
         [
           '/',
