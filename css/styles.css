@@ -74,6 +74,11 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
